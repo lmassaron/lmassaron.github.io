@@ -1,0 +1,78 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 0 10px;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.75;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+p.subtitle {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+h2.pages-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 0.25rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* This is for the current nav structure, will be adapted in the next step */
+header nav a {
+    margin-right: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
