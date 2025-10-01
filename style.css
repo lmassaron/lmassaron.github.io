@@ -1,20 +1,34 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    max-width: 680px;
-    margin: 40px auto;
-    padding: 0 10px;
+    margin: 0;
+    padding: 0;
     color: #333;
     background-color: #fff;
     line-height: 1.75;
 }
 
-header {
+.container {
+    display: flex;
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+.sidebar {
+    flex: 0 0 220px;
+    padding-right: 2rem;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.sidebar header {
     text-align: left;
-    margin-bottom: 2rem;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -25,13 +39,13 @@ h1 a {
 }
 
 p.subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
     color: #555;
 }
 
 h2.pages-heading {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
@@ -57,22 +71,24 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-main {
-    margin-top: 2rem;
-}
-
-main h2 {
+.content h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 3rem;
+    margin-top: 0;
     margin-bottom: 1rem;
     border-bottom: 1px solid #eee;
     padding-bottom: 0.5rem;
 }
 
-/* This is for the current nav structure, will be adapted in the next step */
-header nav a {
-    margin-right: 1rem;
-    color: #007bff;
-    text-decoration: none;
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-basis: auto;
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
 }
