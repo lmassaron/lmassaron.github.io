@@ -116,3 +116,34 @@ nav ul li.active a {
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.video-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.video-item img {
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.video-details {
+    flex: 1;
+}
+
+.video-details h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.video-details p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
