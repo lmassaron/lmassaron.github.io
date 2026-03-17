@@ -209,3 +209,36 @@ nav ul li.active a {
 .book-entry h3 {
     font-weight: 700 !important;
 }
+
+.project-entry {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.project-info h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.project-info h3 a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.project-info p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
